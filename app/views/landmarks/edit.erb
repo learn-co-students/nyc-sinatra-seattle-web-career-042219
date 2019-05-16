@@ -2,5 +2,22 @@
 
 <!-- add content here -->
 
+<form class="" action="/landmarks/<%=@landmark.id%>" method="post">
+  <label for="landmark[name]">Name: </label>
+  <br>
+  <input type="text" name="landmark[name]" value="<%=@landmark.name%>" id="name">
+  <br>
+  <label for=""></label>
+  <br>
+  <input type="text" name="landmark[year_completed]" value="<%=@landmark.year_completed%>" id="year_completed">
+  <br>
+  <input type="hidden" id="hidden" name="_method" value="PATCH">
+  <input type="submit" name="" value="Edit Landmark">
+
+
+</form>
+
+
+
 <a class="button" href="/figures">Landmarks</a>
 <a class="button" href="/">Home</a>
