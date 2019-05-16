@@ -60,7 +60,7 @@ class FiguresController < ApplicationController
     @figure.update(name: params[:figure][:name])
     if !params[:figure].keys.include?("title_ids")
       params[:figure]["title_ids"] = []
-      @figure.titles = []
+      #@figure.titles = []
     end
 
     if !params[:figure][:title_ids].empty?
@@ -74,6 +74,7 @@ class FiguresController < ApplicationController
 
     if !params[:figure].keys.include?("landmark_ids")
       params[:figure]["landmark_ids"] = []
+      #@figure.landmarks =
     end
     if !params[:figure][:landmark_ids].empty?
       params[:figure][:landmark_ids].each do |id|
