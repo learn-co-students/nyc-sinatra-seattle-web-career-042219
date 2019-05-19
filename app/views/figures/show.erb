@@ -1,0 +1,27 @@
+<h1></h1>
+<table>
+<th>Show a Figure</th>
+    <tr>
+        <td align="center"><a href="/figures/<%= @figure.id %>"><%= @figure.name %></a>
+        <ul>
+        <% @figure.landmarks.all.each do |landmark| %>
+            <li>
+            <%= landmark.name %>
+            <%= landmark.year_completed %>
+            </li>
+        <% end %>
+        </ul>
+        <ul>
+        <% @figure.titles.all.each do |title| %>
+            <li>
+            <%= title.name %>
+            </li>
+        <% end %>
+        </ul>
+    </tr>
+</table>
+<br>
+
+<a href="/figures/<%= @figure.id %>/edit">Edit</a><br>
+<a href="/figures">See all Figures</a><br>
+<a href="/">Home</a>
