@@ -1,5 +1,5 @@
 landmarks_list = {
-    "Madison Square Guarden" => {
+    "Madison Square Garden" => {
       :year_completed => 1901
     },
     "The big bull outside" => {
@@ -9,7 +9,7 @@ landmarks_list = {
       :year_completed => 2014
     },
     "Museum Mile" => {
-      :year_completed => 1058
+      :year_completed => 1958
     },
     "Subway Station" => {
       :year_completed => 2015
